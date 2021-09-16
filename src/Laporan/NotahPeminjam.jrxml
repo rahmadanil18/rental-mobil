@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f9c3d461-1d2d-4ca9-8a25-b7f410b3a5c9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="211"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="name" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from transaksi where nama = $P{name}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pinjam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kembali" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lama" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-19" y="-19" width="840" height="79" backcolor="#333333" uuid="1f3b734c-4797-422a-8452-579f94b3360b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="245" y="0" width="382" height="63" forecolor="#00FFFF" uuid="fb837bea-2f61-4e8d-925c-6ca25bb7451c"/>
+				<textElement>
+					<font fontName="Arial" size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jarvis Car Rental]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="15" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="295" splitType="Stretch">
+			<textField>
+				<reportElement x="234" y="54" width="100" height="24" uuid="f392fc6d-2c2f-4d74-95b6-7f9ffa6794d8"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="85" y="54" width="100" height="24" uuid="d5e75c34-1075-4d80-a91a-1cb5bae05f37"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="87" width="100" height="19" uuid="a20174e8-2046-4fba-b0cb-40553926fa16"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[nama]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="234" y="87" width="100" height="19" uuid="f1b7b149-46c0-4713-95dd-a018269afcb7"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="124" width="100" height="20" uuid="508a73eb-e89d-479a-add4-46631315c685"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Polisi]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="234" y="124" width="100" height="20" uuid="fa10eb41-ffea-4a85-84d2-d3da9bdfa37c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="85" y="162" width="111" height="20" uuid="cd0dee93-11fb-4809-9ad7-150ed5edea4d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Pinjam]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="234" y="162" width="100" height="20" uuid="8d28e04c-ea53-419c-904b-f7f0cac52833"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pinjam}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="197" width="124" height="20" uuid="2987216c-3e63-44ef-a16c-4d008571542b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal kembali]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="234" y="197" width="100" height="20" uuid="3bd45fb7-0ac7-40f4-a930-c6b50d85d057"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kembali}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="487" y="50" width="100" height="20" uuid="90e4fd58-0b29-49dd-9bcf-6767cf2b03c9"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tarif/Hari]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="627" y="50" width="100" height="20" uuid="2f2aad33-f625-4af5-bc04-394885ddc66a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="489" y="85" width="100" height="20" uuid="05f6fe3f-ad93-4059-ac5b-035829f540cf"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lama pinjam]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="627" y="85" width="46" height="20" uuid="5a24035d-41bf-464a-a687-c0a845f119fa"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="604" y="50" width="7" height="20" uuid="4ab3113a-af61-4c1f-9200-1cb47d932bbd"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="605" y="82" width="7" height="20" uuid="30dbfd04-ea73-4187-a5ec-c414e784a6b5"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="54" width="7" height="20" uuid="67493133-89dd-4ab1-b2f1-625962010ed9"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="87" width="7" height="20" uuid="9cdd144f-0697-4af6-b09d-773107b7d443"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="124" width="7" height="20" uuid="58ccacf3-8f67-4931-95ba-a52a0466e60f"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="160" width="7" height="20" uuid="35cf2d9b-de7f-4bcb-a0c6-264dfbf52e75"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="208" y="197" width="7" height="20" uuid="92928922-60c9-4c3a-9424-be4b4cd9349c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="683" y="86" width="100" height="20" uuid="3d54deef-4ff9-4edf-bb13-a10c697f7abf"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hari]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="589" y="234" width="149" height="20" uuid="8a0ec2e7-46c7-456e-8783-b12303177e0d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CEO Jarvis Car Rental]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="570" y="275" width="187" height="20" uuid="69aa531a-0b77-4640-a01b-ed64ce555a0e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rahma Danil M,Kom,P,hd]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="185" y="20" width="512" height="20" uuid="fae4a3fe-6714-49a0-9266-73cc356b3bab"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Jika Notah ini Hilang Pada Saat Pengembalian Mobil Maka Akan Dikenai Denda 1 Jt -500 Jt]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

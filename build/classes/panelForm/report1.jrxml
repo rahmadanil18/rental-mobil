@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="75b22f9e-b22a-4568-a710-b375bf36251c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="302"/>
+	<parameter name="parameter" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from transaksi where id = $P{parameter}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pinjam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kembali" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lama" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="107" splitType="Stretch">
+			<staticText>
+				<reportElement x="209" y="0" width="42" height="89" forecolor="#0066FF" uuid="d136d3f8-cee4-4d15-864d-36e9c41475a6"/>
+				<textElement>
+					<font fontName="Consolas" size="72" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[J]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="16" width="126" height="34" forecolor="#0066FF" uuid="1bc56a56-7a66-4eee-8eef-d186c1a7d78f"/>
+				<textElement>
+					<font fontName="Consolas" size="28" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ARVIS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="50" width="100" height="20" uuid="7257563b-f79e-4519-8559-ff2b20205f6f"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Car Rental]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="89" width="555" height="1" uuid="6c75effc-41dd-4c14-9f50-fda436b70a81"/>
+				<graphicElement>
+					<pen lineStyle="Double"/>
+				</graphicElement>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="36" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="605" splitType="Stretch">
+			<staticText>
+				<reportElement x="76" y="0" width="105" height="20" uuid="a92855d2-ba51-4be8-8cd3-5afdefc1903a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID PEMINJAM]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="277" y="0" width="100" height="20" uuid="e84d696d-8641-4a1d-b4cd-7d710dd0010f"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="76" y="40" width="105" height="20" uuid="8292a384-7a43-48bc-a076-c688d2bb0385"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA PEMINJAM]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="277" y="40" width="100" height="20" uuid="5b6d765b-0652-4b95-8109-af956c4ff783"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="76" y="75" width="100" height="20" uuid="fcb9b76d-abd2-4213-b279-635622d7f3b1"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO POLISI]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="277" y="75" width="100" height="20" uuid="c489a119-3ac7-4922-89fd-c2efbfa1fb6c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="76" y="116" width="143" height="20" uuid="7b8791c1-07b8-4c5d-9f40-044d6e29f4d4"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TANGGAL PINJAM]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="277" y="116" width="100" height="20" uuid="51d49132-25aa-49bd-a3b3-76c9286729b7"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pinjam}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="76" y="155" width="143" height="20" uuid="ccf4ae76-6043-45f6-960e-ef21e60e8fda"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TANGGAL KEMBALI]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="277" y="155" width="100" height="20" uuid="3c0da23e-5719-4fe7-8aae-7002d22f4b61"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kembali}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="76" y="196" width="143" height="20" uuid="19b50e0c-cad1-4d03-8bbc-db27a8f2837c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAMA PEMINJAMAN]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="277" y="196" width="54" height="20" uuid="3bbbb29e-f988-4d19-8cfd-ce2934a61ea3"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="324" y="196" width="100" height="20" uuid="978369ef-b085-43ce-ba24-1ad2cacc2c92"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[hari]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="0" width="8" height="20" uuid="219b6629-3207-4caa-9730-29681ed7a444"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="40" width="8" height="20" uuid="179581d2-ac21-4e36-97dc-12ddf632aebd"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="75" width="8" height="20" uuid="ef7e7a11-ac93-47c8-9301-dbf38581f477"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="116" width="8" height="20" uuid="861edec0-75f1-4958-b7dd-c42a28a0a2c1"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="155" width="8" height="20" uuid="7563fddf-ea41-4b3e-a06e-ce7830d3e475"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="196" width="8" height="20" uuid="4bfbc936-ebc8-48b8-ad18-d2cab0d39653"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="328" width="555" height="20" uuid="af6808b6-2ec3-4c40-a399-0a543124b386"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Selama Peminjaman Nota Ini Tidak Boleh Hilang Jika Hilang Maka Akan Dikenai Denda Rp.1 Jt - 500 Jt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="381" width="166" height="20" uuid="3db3c89d-fd97-4dce-9410-245fa42cd46c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[CEO JARVIS CAR RENTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="443" width="167" height="20" uuid="2620e8a2-0b36-4458-8102-d84500fd29b3"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rahma Danil.M,KOM,P,hd,Tec]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="584" width="554" height="1" uuid="942d366c-14ae-44b8-aef5-84e0f33fa05f"/>
+			</line>
+			<staticText>
+				<reportElement x="163" y="544" width="249" height="20" uuid="a3c79e51-5276-43c5-90c4-f2d59535bf14"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jln. Dakota 8A Sukaraja Cicendo Bandung]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="564" width="389" height="20" uuid="70b48a4f-230b-4d2d-ae10-460190c205d8"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Pos: 4443 Provinsi Jawa Barat Kota Bandung Fax:6413214165]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<componentElement>
+				<reportElement x="76" y="4" width="402" height="50" uuid="d5736fec-391e-40b2-9b22-72f4146ba56f"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="SCC14ShippingCode" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA["1234"]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</pageFooter>
+</jasperReport>
